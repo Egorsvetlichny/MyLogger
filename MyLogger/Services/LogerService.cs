@@ -44,10 +44,10 @@ namespace MyLogger.Services
                     LogWarning(fullLogMessage);
                     break;
                 case LogLevel.Error:
-                    LogError(exception, message);
+                    LogError(exception, fullLogMessage);
                     break;
                 case LogLevel.Critical:
-                    LogCritical(exception, message);
+                    LogCritical(exception, fullLogMessage);
                     break;
             }
         }
